@@ -43,7 +43,7 @@ To create a complete DevOps lab that:
 └── README.md       # Overview and instructions (this file)
 ---
 
-✅ Lab Status
+## ✅ Lab Status
 To keep track of the lab's progress:
 
 ✅ Flask API + PostgreSQL containerized
