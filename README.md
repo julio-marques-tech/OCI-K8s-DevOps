@@ -59,7 +59,8 @@ To keep track of the lab's progress:
 🔄 Configuration automation with Ansible
 
 📚 Full documentation with guides, diagrams and instructions
-
+```
+```
 🛠️ Technologies & Tools
 Tools and technologies used in this lab:
 
@@ -78,7 +79,8 @@ GitHub Actions – CI/CD pipeline automation
 Ansible – Configuration management
 
 Oracle Cloud Infrastructure (OCI) – Cloud provider target
-
+```
+```
 🧠 Learning Objectives
 Main goals behind the lab:
 
@@ -93,7 +95,8 @@ Apply IaC principles using Terraform
 Integrate OCI knowledge with Salesforce and Trailhead studies
 
 Build a portfolio-worthy project, helping others in the tech community
-
+```
+```
 🧪 Run Locally (Docker Compose)
 bash
 Copiar
@@ -111,6 +114,8 @@ curl http://localhost:5000/users          # GET - fetch all users
 curl -X POST http://localhost:5000/users \
   -H "Content-Type: application/json" \
   -d '{"name": "Julio", "email": "julio@example.com"}'
+```
+```
 🤝 Contributing
 This project is not only for personal learning but also to help others in the community.
 Feel free to:
@@ -122,7 +127,8 @@ Suggest improvements
 Open issues or PRs
 
 Share with other learners 🚀
-
+```
+```
 📄 License
 Distributed under the MIT License.
 See LICENSE for more information.
