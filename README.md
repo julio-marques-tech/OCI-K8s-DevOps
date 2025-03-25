@@ -41,7 +41,8 @@ To create a complete DevOps lab that:
 ├── db/             # SQL scripts for database setup
 ├── docs/           # Markdown files with guides, architecture, diagrams
 └── README.md       # Overview and instructions (this file)
-✅ Lab Status
+---
+## ✅ Lab Status
  Flask API + PostgreSQL containerized
 
  Tested locally with Docker Compose
