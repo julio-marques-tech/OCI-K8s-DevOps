@@ -42,65 +42,87 @@ To create a complete DevOps lab that:
 ├── docs/           # Markdown files with guides, architecture, diagrams
 └── README.md       # Overview and instructions (this file)
 ---
-## ✅ Lab Status
- Flask API + PostgreSQL containerized
+✅ Lab Status
+To keep track of the lab's progress:
 
- Tested locally with Docker Compose
+✅ Flask API + PostgreSQL containerized
 
- Deployed on OCI
+✅ Tested locally with Docker Compose
 
- CI/CD pipeline in GitHub Actions
+🔄 Deployment on Oracle Cloud Infrastructure (OCI)
 
- Infrastructure provisioned with Terraform
+🔄 CI/CD pipeline configured via GitHub Actions
 
- Ansible automation
+🔄 Infrastructure provisioning with Terraform
 
- Full documentation and diagrams
+🔄 Configuration automation with Ansible
+
+📚 Full documentation with guides, diagrams and instructions
 
 🛠️ Technologies & Tools
-Tool	Purpose
-Flask	Backend API (Python microservice)
-PostgreSQL	Relational database
-Docker	Containerization
-Docker Compose	Multi-container orchestration
-Kubernetes	Production-grade container orchestration
-Terraform	Infrastructure as Code (IaC)
-GitHub Actions	CI/CD pipelines
-Ansible	Provisioning and configuration management
-Oracle Cloud	Cloud deployment target
+Tools and technologies used in this lab:
+
+Flask (Python) – Microservice for the API
+
+PostgreSQL – Relational database
+
+Docker & Docker Compose – Containerization
+
+Kubernetes – Orchestration of containers
+
+Terraform – Infrastructure as Code (IaC)
+
+GitHub Actions – CI/CD pipeline automation
+
+Ansible – Configuration management
+
+Oracle Cloud Infrastructure (OCI) – Cloud provider target
+
 🧠 Learning Objectives
-Gain fluency in cloud-native DevOps tools
+Main goals behind the lab:
 
-Understand microservices, containers, and networking
+Develop fluency with cloud-native DevOps tools
 
-Apply CI/CD concepts in real pipelines
+Understand containers, microservices, networking, and orchestration
 
-Learn and apply Infrastructure as Code (IaC)
+Create and maintain real-world CI/CD pipelines
 
-Integrate with Oracle Cloud and Salesforce
+Apply IaC principles using Terraform
 
-🧪 Run Locally (API + DB in Docker)
+Integrate OCI knowledge with Salesforce and Trailhead studies
+
+Build a portfolio-worthy project, helping others in the tech community
+
+🧪 Run Locally (Docker Compose)
 bash
 Copiar
 Editar
-# Clone the repository
+# Clone the repo
 git clone https://github.com/julio-marques-tech/OCI-K8s-DevOps.git
 cd OCI-K8s-DevOps/docker
 
 # Start the containers
 docker-compose up --build -d
 
-# Test the Flask API
-curl http://localhost:5000/               # GET - check API
-curl http://localhost:5000/users          # GET - list users
+# Test the API
+curl http://localhost:5000/               # GET - API check
+curl http://localhost:5000/users          # GET - fetch all users
 curl -X POST http://localhost:5000/users \
   -H "Content-Type: application/json" \
   -d '{"name": "Julio", "email": "julio@example.com"}'
 🤝 Contributing
-This repository is part of my personal study lab but also open to the community. Feel free to fork, test, submit issues or pull requests. Let’s grow together. 🌱
+This project is not only for personal learning but also to help others in the community.
+
+Feel free to:
+
+Fork the repo
+
+Suggest improvements
+
+Open issues or PRs
+
+Share with other learners 🚀
 
 📄 License
-MIT License
-
-🧭 Final Notes
-Stay tuned! I’ll be updating this repository as I go through my certifications, expand my cloud skills, and build real-world experience — always sharing the journey. 🌍
+Distributed under the MIT License.
+See LICENSE for more information.
