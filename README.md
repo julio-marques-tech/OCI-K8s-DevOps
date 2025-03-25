@@ -42,6 +42,7 @@ To create a complete DevOps lab that:
 ├── docs/           # Markdown files with guides, architecture, diagrams
 └── README.md       # Overview and instructions (this file)
 ---
+
 ✅ Lab Status
 To keep track of the lab's progress:
 
@@ -112,7 +113,6 @@ curl -X POST http://localhost:5000/users \
   -d '{"name": "Julio", "email": "julio@example.com"}'
 🤝 Contributing
 This project is not only for personal learning but also to help others in the community.
-
 Feel free to:
 
 Fork the repo
