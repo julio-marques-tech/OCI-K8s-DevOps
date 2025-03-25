@@ -42,7 +42,7 @@ To create a complete DevOps lab that:
 ├── docs/           # Markdown files with guides, architecture, diagrams
 └── README.md       # Overview and instructions (this file)
 ---
-
+```
 ## ✅ Lab Status
 To keep track of the lab's progress:
 
