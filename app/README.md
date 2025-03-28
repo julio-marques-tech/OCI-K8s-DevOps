@@ -75,7 +75,7 @@ Once the containers are running, you can test the API using:
 
 curl http://localhost:5000/users
 Or use Postman or Insomnia for easier testing.
-
+```markdown
 💡 Tips
 If changes are made to requirements.txt, rebuild the image with:
 
@@ -83,8 +83,9 @@ docker compose build
 The database must be running and accessible for the Flask app to work.
 
 View logs with:
-
 docker compose logs flask
+```
+```markdown
 🎯 Learning Objectives Covered
 ✅ Build a RESTful API using Flask
 
@@ -95,7 +96,7 @@ docker compose logs flask
 ✅ Configure Flask using environment variables
 
 ✅ Test endpoints with tools like curl, Postman or Insomnia
-
+```
 📚 References
 Flask Documentation
 
