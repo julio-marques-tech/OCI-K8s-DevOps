@@ -15,7 +15,9 @@ This directory contains the main Python microservice using [Flask](https://flask
 ---
 
 ## 📁 Project Structure
+
 /Flask │ ├── app/ │ ├── init.py # Flask app factory │ ├── models.py # SQLAlchemy models │ ├── routes.py # CRUD endpoints │ └── config.py # Configuration management │ ├── Dockerfile # Container image for the Flask app ├── requirements.txt # Python dependencies └── .env # Environment variables
+
 ---
 
 ## 🧪 How to Run Locally
@@ -31,8 +33,8 @@ docker compose up -d
 
 # 3. Check logs to confirm it's running
 docker compose logs flask
-
 The Flask API should be available at:
+
 http://localhost:5000/
 🔁 API Endpoints
 Method	Endpoint	Description
@@ -51,25 +53,27 @@ Sample request (POST):
 You can configure Flask settings via a .env file or directly in the Docker Compose file.
 
 Example .env:
+
 FLASK_ENV=development
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 POSTGRES_DB=flaskdb
 POSTGRES_HOST=db
-
 🔍 Test the Application
-Once the containers are running, you can test the API using
+Once the containers are running, you can test the API using:
+
 curl http://localhost:5000/users
 Or use Postman or Insomnia for easier testing.
 
 💡 Tips
 If changes are made to requirements.txt, rebuild the image with:
+
 docker compose build
 The database must be running and accessible for the Flask app to work.
 
-Logs can be viewed with:
-docker compose logs flask
+View logs with:
 
+docker compose logs flask
 🎯 Learning Objectives Covered
 ✅ Build a RESTful API using Flask
 
@@ -87,6 +91,3 @@ Flask Documentation
 SQLAlchemy ORM
 
 Docker Compose
-
-
-
