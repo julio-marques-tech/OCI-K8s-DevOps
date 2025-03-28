@@ -15,9 +15,9 @@ This directory contains the main Python microservice using [Flask](https://flask
 ---
 
 ## 📁 Project Structure
-```
+
 /Flask │ ├── app/ │ ├── init.py # Flask app factory │ ├── models.py # SQLAlchemy models │ ├── routes.py # CRUD endpoints │ └── config.py # Configuration management │ ├── Dockerfile # Container image for the Flask app ├── requirements.txt # Python dependencies └── .env # Environment variables
-```
+
 ---
 
 ## 🧪 How to Run Locally
