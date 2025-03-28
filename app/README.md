@@ -28,7 +28,7 @@ This directory contains the main Python microservice using [Flask](https://flask
 ├── Dockerfile              # Container image for the Flask app
 ├── requirements.txt        # Python dependencies
 └── .env                    # Environment variables
-
+```
 ---
 
 ## 🧪 How to Run Locally
