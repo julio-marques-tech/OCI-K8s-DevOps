@@ -52,6 +52,7 @@ Copiar
 Editar
 docker-compose up --build -d
 ```
+---
 ✅ Test the API
 Use curl to test your Flask API locally:
 
@@ -63,7 +64,7 @@ curl http://localhost:5000/users                # GET all users
 curl -X POST http://localhost:5000/users \
   -H "Content-Type: application/json" \
   -d '{"name": "Julio", "email": "julio@example.com"}'
-  ```
+  ---
 🧠 Concepts Practiced
 Dockerfile structure and build
 
@@ -80,7 +81,7 @@ Foundation for Kubernetes deployments
 Ready for CI/CD pipelines using GitHub Actions
 
 Future integrations with Slack, Salesforce, and OCI
-```
+---
 🐛 Troubleshooting
 If something breaks:
 
@@ -90,6 +91,7 @@ Editar
 docker-compose down
 docker system prune -f
 docker-compose up --build -d
+---
 🧹 Cleanup
 To stop and remove all containers:
 
@@ -103,7 +105,7 @@ bash
 Copiar
 Editar
 docker system prune -f
-```
+---
 🔮 Ready for the Future
 This structure is ready to support:
 
@@ -116,7 +118,7 @@ Container deployment to Oracle Cloud (OCI)
 Monitoring/log forwarding to Slack or Salesforce
 
 Dynamic scaling and orchestration in a DevOps workflow
-```
+---
 📚 References
 Dockerfile Best Practices
 
