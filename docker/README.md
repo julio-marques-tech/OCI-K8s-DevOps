@@ -8,28 +8,24 @@ It serves as the foundation for containerization within the **OCI-K8s-DevOps** l
 
 ## 📁 Structure
 
-```markdown
-/docker
-│
-├── Dockerfile              # Defines the Flask app image
-├── docker-compose.yml      # Sets up Flask + PostgreSQL services
-└── README.md               # You are here
-⚙️ Dockerfile Summary
-Uses the official Python 3.12 image
+/docker │ ├── Dockerfile # Defines the Flask app image ├── docker-compose.yml # Sets up Flask + PostgreSQL services └── README.md # You are here
 
-Creates /app as the working directory
-
-Installs Python dependencies via requirements.txt
-
-Copies Flask project code into the container
-
-Exposes port 5000
-
-Runs the app with Gunicorn:
-
-dockerfile
+yaml
 Copiar
 Editar
+
+---
+
+## ⚙️ Dockerfile Summary
+
+- Uses the official Python 3.12 image  
+- Creates `/app` as the working directory  
+- Installs Python dependencies via `requirements.txt`  
+- Copies Flask project code into the container  
+- Exposes port 5000  
+- Runs the app with Gunicorn:
+
+```dockerfile
 CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "wsgi:app"]
 🔄 docker-compose.yml Summary
 Service: app
