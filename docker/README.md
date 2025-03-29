@@ -28,6 +28,7 @@ Runs the app with Gunicorn:
 
 🔄 docker-compose.yml Summary
 Service: app
+
 Builds the image from the Dockerfile
 
 Depends on the db service
@@ -35,6 +36,7 @@ Depends on the db service
 Maps port 5000 to localhost
 
 Service: db
+
 Uses the official postgres:15 image
 
 Sets up a database named flaskdb
