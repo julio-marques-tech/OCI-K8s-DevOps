@@ -10,10 +10,6 @@ It serves as the foundation for containerization within the **OCI-K8s-DevOps** l
 
 /docker │ ├── Dockerfile # Defines the Flask app image ├── docker-compose.yml # Sets up Flask + PostgreSQL services └── README.md # You are here
 
-yaml
-Copiar
-Editar
-
 ---
 
 ## ⚙️ Dockerfile Summary
@@ -55,6 +51,7 @@ bash
 Copiar
 Editar
 docker-compose up --build -d
+```
 ✅ Test the API
 Use curl to test your Flask API locally:
 
@@ -66,6 +63,7 @@ curl http://localhost:5000/users                # GET all users
 curl -X POST http://localhost:5000/users \
   -H "Content-Type: application/json" \
   -d '{"name": "Julio", "email": "julio@example.com"}'
+  ```
 🧠 Concepts Practiced
 Dockerfile structure and build
 
@@ -82,7 +80,7 @@ Foundation for Kubernetes deployments
 Ready for CI/CD pipelines using GitHub Actions
 
 Future integrations with Slack, Salesforce, and OCI
-
+```
 🐛 Troubleshooting
 If something breaks:
 
@@ -105,6 +103,7 @@ bash
 Copiar
 Editar
 docker system prune -f
+```
 🔮 Ready for the Future
 This structure is ready to support:
 
@@ -117,10 +116,11 @@ Container deployment to Oracle Cloud (OCI)
 Monitoring/log forwarding to Slack or Salesforce
 
 Dynamic scaling and orchestration in a DevOps workflow
-
+```
 📚 References
 Dockerfile Best Practices
 
 Docker Compose Docs
 
 Gunicorn Docs
+```
