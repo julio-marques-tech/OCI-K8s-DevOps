@@ -24,11 +24,10 @@ Exposes port 5000
 
 Runs the app with Gunicorn:
 
-'CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "wsgi:app"]'
+''' CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "wsgi:app"] '''
 
 🔄 docker-compose.yml Summary
 Service: app
-
 Builds the image from the Dockerfile
 
 Depends on the db service
@@ -36,7 +35,6 @@ Depends on the db service
 Maps port 5000 to localhost
 
 Service: db
-
 Uses the official postgres:15 image
 
 Sets up a database named flaskdb
@@ -46,17 +44,18 @@ Connected via Docker Compose service name db
 🚀 Run Locally
 Make sure you're in the /docker directory:
 
-'cd docker'
+''' cd docker '''
 
 Then build and run everything:
 
-'docker-compose up --build -d'
+''' docker-compose up --build -d '''
 
 ✅ Test the API
 Use curl to test your Flask API locally:
 
-'curl http://localhost:5000/' # Health check
-'curl http://localhost:5000/users' # GET all users
+''' curl http://localhost:5000/ # Health check
+curl http://localhost:5000/users # GET all users
+'''
 
 Post request:
 
@@ -85,18 +84,21 @@ Future integrations with Slack, Salesforce, and OCI
 🐛 Troubleshooting
 If something breaks:
 
-'docker-compose down'
-'docker system prune -f'
-'docker-compose up --build -d'
+''' docker-compose down
+docker system prune -f
+docker-compose up --build -d
+'''
 
 🧹 Cleanup
 To stop and remove all containers:
 
-'docker-compose down'
+''' docker-compose down
+'''
 
 To remove unused images, volumes, and networks:
 
-'docker system prune -f'
+''' docker system prune -f
+'''
 
 🔮 Ready for the Future
 This structure is ready to support:
@@ -117,3 +119,4 @@ Dockerfile Best Practices
 Docker Compose Docs
 
 Gunicorn Docs
+
